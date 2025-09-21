@@ -10,9 +10,10 @@ export default function Counter() {
 
     const minusHandle = () => {
         const minus = count - 1;
-        if (minus == 0) {
+        if (minus !== -1) {
             setCount(minus);
         }
+        
     }
 
     const resetHandle = () => {
